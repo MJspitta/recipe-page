@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-family: 'Outfit', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+h1 {
+    font-size: 40px;
+    color: hsl(24, 5%, 18%);
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 28px;
+}
+
+h3 {
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+    color: hsl(332, 51%, 32%);
+}
+
+p, li, td {
+    color: hsl(30, 10%, 34%);
+}
+li {
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    margin-left: 1.3rem;
+    padding-left: 1rem;
+}
+
+hr {
+    border: 1px solid hsl(30, 18%, 87%);
+    margin: 1.5rem 0;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    margin: 6rem 0;
+    border-radius: 1rem;
+}
+
+.container-img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.container-img img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.pt-container {
+    margin: 1.5rem 0;
+    background-color: hsl(330, 100%, 98%);
+    padding: 2rem;
+}
+.pt-container li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.instructions li::marker, .ingredients li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.bold-txt {
+    font-weight: 600;
+    color: hsl(24, 5%, 18%);
+}
+
+.brown-txt {
+    color: hsl(14, 45%, 36%);
+}
+
+table {
+    margin-top: 1rem;
+    width: 100%;
+}
+td {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 0.8rem 1.5rem;
+}
+.last {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0 0 2rem;
+        border-radius: 0;
+    }
+    .container-img img {
+        border-radius: 0;
+    }
+    h1,
+    .container > p,
+    .pt-container,
+    .ingredients,
+    .instructions,
+    .nutrition,
+    hr {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+}
